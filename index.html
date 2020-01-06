@@ -12,7 +12,7 @@
   </head>
 
   <body>
-
+    <!-- STICKY COLLAPSE NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
 
@@ -26,18 +26,10 @@
         <div class="float-right">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item nav-link">
-                About
-              </li>
-              <li class="nav-item nav-link">
-                Portfolio
-              </li>
-              <li class="nav-item nav-link">
-                Reviews
-              </li>
-              <li class="nav-item nav-link">
-                Contact
-              </li>
+              <li id="about" class="nav-item nav-link text-dark">About</li>
+              <li id="portfolio" class="nav-item nav-link text-dark">Portfolio</li>
+              <li id="reviews" class="nav-item nav-link text-dark">Reviews</li>
+              <li id="contact" class="nav-item nav-link text-dark">Contact</li>
             </ul>
           </div>
         </div>
@@ -48,66 +40,196 @@
 
     <div class="container">
 
-    
-      <!-- MAIN PAGE JUMBO -->
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <img src="images/tbdesign-logo.png" class="w-100">
-          <p class="lead">Hello! My name is Ian Toy, and I am an SF Bay Area-based Full Stack Web Developer with a diverse work history that spans mutliple disciplines. From music composition to insurance underwriting and all of the odd-jobs in between, I am passionate about applying the lessons I've learned to designing sleek, elegant, and efficient applications.</p>
-          <p class="lead">Take a look at some of my recent projects below!</p>
+      <!-- HOME PAGE -->
+      <div id="home-page" class="d-none">
+        <!-- MAIN PAGE JUMBO -->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <img src="images/tbdesign-logo.png" class="w-100">
+            <p class="lead">Hello! My name is Ian Toy, and I am an SF Bay Area-based Full Stack Web Developer with a diverse work history that spans mutliple disciplines. From music composition to insurance underwriting and all of the odd-jobs in between, I am passionate about applying the lessons I've learned to designing sleek, elegant, and efficient applications.</p>
+            <p class="lead">Take a look at some of my recent projects below!</p>
+          </div>
         </div>
+
+        <!-- PROJECTS CAROUSEL -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://amandalatkins.github.io/radlibz/" target="_blank">
+                <img src="images/radlibz.PNG" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>  
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://ietoy.github.io/Code-Quiz/" target="_blank">
+                <img src="images/quiz.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-warning">Code Quiz</h5>
+                  <p class="text-warning">Test your knowledge of basic web development!</p>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://ietoy.github.io/Random-Password-Generator/" target="_blank">
+                <img src="images/password.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-primary">Random Password Generator</h5>
+                  <p>Generate a random password from up to four different character sets.</p class="text-primary">
+                </div>
+              </a>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      <!-- END HOME PAGE -->
       </div>
 
-      <!-- PROJECTS CAROUSEL -->
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
+      <!-- PORTFOLIO -->
+      <div id="portfolio" class="">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Portfolio</h1>
+            <p class="lead">Take a look at some of my projects:</p>
+            <hr>
 
-        <div class="carousel-inner">
-        
-          <div class="carousel-item active">
-        
-            <a href="https://amandalatkins.github.io/radlibz/" target="_blank">
-              <img src="images/radlibz.PNG" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-              </div>  
-            </a>
-        
-          </div>
-
-          <div class="carousel-item">
-            <a href="https://ietoy.github.io/Code-Quiz/" target="_blank">
-              <img src="images/quiz.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="text-warning">Code Quiz</h5>
-                <p class="text-warning">Test your knowledge of basic web development!</p>
+            <!-- FIRST ROW -->
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card m-2 p-2">
+                      <a href="https://scratch.mit.edu/projects/341915412/">
+                          <img src="images/cartman.jpg" class="card-img-top" alt="Cartman">
+                              <div class="card-body tealBack">
+                                  <h5 class="card-title text-white text-center">Cheesy Poofs</h5>
+                              </div>
+                      </a>
+                  </div>
               </div>
-            </a>
-            
-          </div>
-
-          <div class="carousel-item">
-            <a href="https://ietoy.github.io/Random-Password-Generator/" target="_blank">
-              <img src="images/password.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="text-primary">Random Password Generator</h5>
-                <p>Generate a random password from up to four different character sets.</p class="text-primary">
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card m-2 p-2">
+                      <a href="#">
+                          <img src="images/rps.jpg" class="card-img-top" alt="Rock Paper Scissors">
+                              <div class="card-body tealBack">
+                                  <h5 class="card-title text-white text-center">Rock Paper Scissors</h5>
+                              </div>
+                      </a>
+                  </div>
+              </div>                    
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card m-2 p-2">
+                      <a href="#">
+                          <img src="images/mouse.jpg" class="card-img-top" alt="Mouse Ball">
+                              <div class="card-body tealBack">
+                                  <h5 class="card-title text-white text-center">Mouse Ball</h5>
+                              </div>
+                      </a>
+                  </div>
               </div>
-            </a>
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card m-2 p-2">
+                      <a href="https://www.twitch.tv/magiccitymtg">
+                          <img src="images/stream-icon.jpg" class="card-img-top" alt="Stream">
+                              <div class="card-body tealBack">
+                                  <h5 class="card-title text-white text-center">Check out my Stream!</h5>
+                              </div>
+                      </a>
+                  </div>
+              </div>
+
+            <!-- END FIRST ROW -->
+            </div>
+
+            <!-- SECOND ROW -->
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                  <div class="card m-2 p-2">
+                      <a href="#">
+                          <img src="images/quiz-tile.jpg.png" class="card-img-top" alt="Code Quiz">
+                              <div class="card-body tealBack">
+                                  <h5 class="card-title text-white text-center">Code Quiz</h5>
+                              </div>
+                      </a>
+                  </div>
+              </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card m-2 p-2">
+                    <a href="#">
+                        <img src="images/password-tile.jpg" class="card-img-top" alt="Password Generator">
+                            <div class="card-body tealBack">
+                                <h5 class="card-title text-white text-center">Password Generator</h5>
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="card m-2 p-2">
+                  <a href="#">
+                      <img src="images/radlibz-tile.png" class="card-img-top" alt="RadLibz">
+                          <div class="card-body tealBack">
+                              <h5 class="card-title text-white text-center">RadLibz!</h5>
+                          </div>
+                  </a>
+              </div>
+            </div>
+
+            <!-- END SECOND ROW -->
+            </div>
+          <!-- END CONTAINER -->
+          </div>
+        <!-- END JUMBO -->
+        </div>
+      <!-- END PORTFOLIO -->
+      </div>
+    
+      <!-- REVIEWS -->
+      <div id="reviews" class="d-none">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <img src="images/tbdesign-logo.png" class="w-100">
+            <h1 class="display-4">Reviews</h1>
+            <p class="lead">Coming Soon!</p>
           </div>
         </div>
+      <!-- END REVIEWS -->
+      </div>
 
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      <!-- CONTACT -->
+      <div id="contact" class="d-none">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Contact</h1>
+            <p class="lead">Please feel free to contact me through any of the below. I look forward to hearing from you!</p>
+            <hr>
+
+            <!-- CONTACT INFO, EMAIL, PHONE, PROF PIC -->
+            <p>Email: iantoy3235@gmail.com</p>
+            <p>Phone: (925) 667-6453</p>
+
+            <!-- GITHUB LINK -->
+            <p>Link to my <a href="https://github.com/ietoy" target="_blank">GitHub</a></p>
+            
+            <!-- LINKEDIN LINK -->
+            <p>Link to my <a href="https://www.linkedin.com/in/ian-toy-265077196/" target="_blank">LinkedIn</a></p>
+
+            <!-- RESUME PDF LINK -->
+
+
+
+        </div>
+      <!-- END CONTACT -->
       </div>
 
     <!-- END CONTAINER -->
