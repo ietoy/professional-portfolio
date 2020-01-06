@@ -1,0 +1,15 @@
+.jumbotron {
+    margin-top: 56px;
+    margin-bottom: 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: white;
+}
+
+#icon {
+    height: 50px;
+}
+
+body {
+    background-color: #f54a51;
+}

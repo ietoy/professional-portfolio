@@ -1,77 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
     <title>ToyBox Design</title>
+  </head>
 
-<!-- FOUNDATION CSS LINKS -->
-<link rel="stylesheet" href="css/app.css"/>
-<link rel="stylesheet" href="css/foundation.css"/>
-<link rel="stylesheet" href="css/foundation.min.css"/>
-<!-- MY STYLESHEET -->
-<link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
 
-<body>
-  <header class="sticky-shrinknav-header">
-    <h1 class="sticky-shrinknav-header-title">
-      <img src="assets/tbdesign-logo.png" alt="ToyBox Design Logo">
-    </h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">
+          <img id="icon" src="images/tbdesign-icon.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="float-right">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item nav-link">
+                About
+              </li>
+              <li class="nav-item nav-link">
+                Portfolio
+              </li>
+              <li class="nav-item nav-link">
+                Reviews
+              </li>
+              <li class="nav-item nav-link">
+                Contact
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </nav>
+
+    <div class="container">
+
     
-    <div class="menu align-center sticky-shrinknav-menu">
-      <div class="expanded button-group hollow">
-        <a class="button">ABOUT</a>
-        <a class="button">PORTFOLIO</a>
-        <a class="button">REVIEWS</a>
-        <a class="button">CONTACT</a>
-      </div>    
+      <!-- MAIN PAGE JUMBO -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <img src="images/tbdesign-logo.png" class="w-100">
+          <p class="lead">Hello! My name is Ian Toy, and I am an SF Bay Area-based Full Stack Web Developer with a diverse work history that spans mutliple disciplines. From music composition to insurance underwriting and all of the odd-jobs in between, I am passionate about applying the lessons I've learned to designing sleek, elegant, and efficient applications.</p>
+          <p class="lead">Take a look at some of my recent projects below!</p>
+        </div>
+      </div>
+
+      <!-- PROJECTS CAROUSEL -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+        
+          <div class="carousel-item active">
+        
+            <a href="https://amandalatkins.github.io/radlibz/" target="_blank">
+              <img src="images/radlibz.PNG" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>  
+            </a>
+        
+          </div>
+
+          <div class="carousel-item">
+            <a href="https://ietoy.github.io/Code-Quiz/" target="_blank">
+              <img src="images/quiz.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-warning">Code Quiz</h5>
+                <p class="text-warning">Test your knowledge of basic web development!</p>
+              </div>
+            </a>
+            
+          </div>
+
+          <div class="carousel-item">
+            <a href="https://ietoy.github.io/Random-Password-Generator/" target="_blank">
+              <img src="images/password.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-primary">Random Password Generator</h5>
+                <p>Generate a random password from up to four different character sets.</p class="text-primary">
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    <!-- END CONTAINER -->
     </div>
 
-  </header>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+    <script src="script.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-      
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <!-- Foundation JS -->
-    <script src="js/app.js"></script>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <!-- <script>$(document).foundation();</script> -->
-    
-    <!-- My JS Link -->
-    <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
