@@ -13,7 +13,7 @@
 
   <body>
     <!-- STICKY COLLAPSE NAV BAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
       <div class="container">
 
         <a class="navbar-brand" href="#">
@@ -23,13 +23,13 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="float-right">
+        <div class="">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li id="about" class="nav-item nav-link text-dark">About</li>
-              <li id="portfolio" class="nav-item nav-link text-dark">Portfolio</li>
-              <li id="reviews" class="nav-item nav-link text-dark">Reviews</li>
-              <li id="contact" class="nav-item nav-link text-dark">Contact</li>
+              <li id="about" class="nav-item nav-link text-light">About</li>
+              <li id="portfolio" class="nav-item nav-link text-light">Portfolio</li>
+              <li id="reviews" class="nav-item nav-link text-light">Reviews</li>
+              <li id="contact" class="nav-item nav-link text-light">Contact</li>
             </ul>
           </div>
         </div>
@@ -99,7 +99,7 @@
       </div>
 
       <!-- PORTFOLIO -->
-      <div id="portfolio" class="">
+      <div id="portfolio" class="d-none">
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <h1 class="display-4">Portfolio</h1>
@@ -108,83 +108,88 @@
 
             <!-- FIRST ROW -->
             <div class="row">
+              <!-- CHEESY POOFS GAME -->
               <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                  <div class="card m-2 p-2">
-                      <a href="https://scratch.mit.edu/projects/341915412/">
-                          <img src="images/cartman.jpg" class="card-img-top" alt="Cartman">
-                              <div class="card-body tealBack">
-                                  <h5 class="card-title text-white text-center">Cheesy Poofs</h5>
-                              </div>
-                      </a>
-                  </div>
+                <div class="card m-2 p-2">
+                  <a href="https://scratch.mit.edu/projects/341915412/" target="_blank">
+                    <img src="images/cartman.jpg" class="card-img-top" alt="Cartman">
+                      <div class="card-body">
+                        <h5 class="card-title text-dark text-center">Cheesy Poofs</h5>
+                      </div>
+                  </a>
+                </div>
               </div>
+              <!-- ROCK PAPER SCISSORS GAME -->
               <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                  <div class="card m-2 p-2">
-                      <a href="#">
-                          <img src="images/rps.jpg" class="card-img-top" alt="Rock Paper Scissors">
-                              <div class="card-body tealBack">
-                                  <h5 class="card-title text-white text-center">Rock Paper Scissors</h5>
-                              </div>
-                      </a>
-                  </div>
-              </div>                    
+                <div class="card m-2 p-2">
+                  <a href="#">
+                    <img src="images/rps.jpg" class="card-img-top" alt="Rock Paper Scissors">
+                      <div class="card-body">
+                        <h5 class="card-title text-dark text-center">Rock Paper Scissors</h5>
+                      </div>
+                  </a>
+                </div>
+              </div>  
+              <!-- MOUSE BALL GAME -->
               <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                  <div class="card m-2 p-2">
-                      <a href="#">
-                          <img src="images/mouse.jpg" class="card-img-top" alt="Mouse Ball">
-                              <div class="card-body tealBack">
-                                  <h5 class="card-title text-white text-center">Mouse Ball</h5>
-                              </div>
-                      </a>
-                  </div>
+                <div class="card m-2 p-2">
+                  <a href="#">
+                    <img src="images/mouse.jpg" class="card-img-top" alt="Mouse Ball">
+                      <div class="card-body">
+                        <h5 class="card-title text-dark text-center">Mouse Ball</h5>
+                      </div>
+                    </a>
+                </div>
               </div>
+              <!-- TWITCH STREAM LINK -->
               <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                  <div class="card m-2 p-2">
-                      <a href="https://www.twitch.tv/magiccitymtg">
-                          <img src="images/stream-icon.jpg" class="card-img-top" alt="Stream">
-                              <div class="card-body tealBack">
-                                  <h5 class="card-title text-white text-center">Check out my Stream!</h5>
-                              </div>
-                      </a>
-                  </div>
+                <div class="card m-2 p-2">
+                  <a href="https://www.twitch.tv/magiccitymtg" target="_blank">
+                    <img src="images/stream-icon.jpg" class="card-img-top" alt="Stream">
+                      <div class="card-body">
+                        <h5 class="card-title text-dark text-center">Check out my Stream!</h5>
+                      </div>
+                  </a>
+                </div>
               </div>
-
             <!-- END FIRST ROW -->
             </div>
 
             <!-- SECOND ROW -->
             <div class="row">
+              <!-- CODE QUIZ -->
               <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                  <div class="card m-2 p-2">
-                      <a href="#">
-                          <img src="images/quiz-tile.jpg.png" class="card-img-top" alt="Code Quiz">
-                              <div class="card-body tealBack">
-                                  <h5 class="card-title text-white text-center">Code Quiz</h5>
-                              </div>
-                      </a>
-                  </div>
-              </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="card m-2 p-2">
-                    <a href="#">
-                        <img src="images/password-tile.jpg" class="card-img-top" alt="Password Generator">
-                            <div class="card-body tealBack">
-                                <h5 class="card-title text-white text-center">Password Generator</h5>
-                            </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-              <div class="card m-2 p-2">
-                  <a href="#">
-                      <img src="images/radlibz-tile.png" class="card-img-top" alt="RadLibz">
-                          <div class="card-body tealBack">
-                              <h5 class="card-title text-white text-center">RadLibz!</h5>
-                          </div>
+                  <a href="https://ietoy.github.io/Code-Quiz/"  target="_blank">
+                    <img src="images/quiz-tile.jpg.png" class="card-img-top" alt="Code Quiz">
+                    <div class="card-body">
+                      <h5 class="card-title text-dark text-center">Code Quiz</h5>
+                    </div>
                   </a>
+                </div>
               </div>
-            </div>
-
+              <!-- PASSWORD GENERATOR -->
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card m-2 p-2">
+                  <a href="https://ietoy.github.io/Random-Password-Generator/"  target="_blank">
+                    <img src="images/password-tile.jpg" class="card-img-top" alt="Password Generator">
+                    <div class="card-body">
+                      <h5 class="card-title text-dark text-center">Password Generator</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- RADLIBZ GAME -->
+              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card m-2 p-2">
+                  <a href="https://amandalatkins.github.io/radlibz/"  target="_blank">
+                    <img src="images/radlibz-tile.png" class="card-img-top" alt="RadLibz">
+                    <div class="card-body">
+                      <h5 class="card-title text-dark text-center">RadLibz!</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
             <!-- END SECOND ROW -->
             </div>
           <!-- END CONTAINER -->
@@ -207,12 +212,14 @@
       </div>
 
       <!-- CONTACT -->
-      <div id="contact" class="d-none">
+      <div id="contact" class="">
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <h1 class="display-4">Contact</h1>
             <p class="lead">Please feel free to contact me through any of the below. I look forward to hearing from you!</p>
             <hr>
+
+            <img class="float-left mr-3" src="images/profile-pic.jpg" alt="My Profile Picture">
 
             <!-- CONTACT INFO, EMAIL, PHONE, PROF PIC -->
             <p>Email: iantoy3235@gmail.com</p>
@@ -225,7 +232,7 @@
             <p>Link to my <a href="https://www.linkedin.com/in/ian-toy-265077196/" target="_blank">LinkedIn</a></p>
 
             <!-- RESUME PDF LINK -->
-
+            <p>For more detailed work history, here is my <a href="assets/IET-resume.pdf" target="_blank">resume</a></p>
 
 
         </div>
